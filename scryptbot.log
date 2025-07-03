@@ -1,0 +1,857 @@
+2025-06-28 13:47:20,920 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 13:47:20,920 - twitter_modern - WARNING - Twitter client not initialized - missing credentials
+2025-06-28 13:47:20,920 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 13:47:20,942 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 13:47:20,942 - __main__ - INFO - Starting in production mode
+2025-06-28 13:47:20,942 - __main__ - INFO - Starting tweet stream for accounts: ['realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 13:47:20,942 - twitter_modern - ERROR - Bearer token required for streaming
+2025-06-28 13:47:20,943 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 13:47:20,943 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 13:47:27,326 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 13:47:27,327 - twitter_modern - WARNING - Twitter client not initialized - missing credentials
+2025-06-28 13:47:27,327 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 13:47:27,349 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 13:47:27,349 - __main__ - INFO - Running in test mode
+2025-06-28 13:47:27,349 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:47:27,349 - __main__ - INFO - Processing tweet test1: Apple is doing great! Their new iPhone is amazing. Tesla on the other hand is having problems....
+2025-06-28 13:47:27,350 - __main__ - INFO - Found 3 companies in tweet test1
+2025-06-28 13:47:27,350 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:47:27,941 - trading_modern - INFO - Bought 22 shares of AAPL at $201.08
+2025-06-28 13:47:28,171 - trading_modern - INFO - Bought 1520 shares of AP at $2.96
+2025-06-28 13:47:28,172 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 13:47:28,172 - __main__ - INFO - Executed trades for 3 companies
+2025-06-28 13:47:28,173 - __main__ - INFO - Company: Apple (AAPL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:28,173 - __main__ - INFO - Company: Tesla (TSLA) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:28,173 - __main__ - INFO - Company: Ap (AP) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:30,174 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:47:30,175 - __main__ - INFO - Processing tweet test2: Microsoft and Google are both excellent companies. Amazon is also doing well....
+2025-06-28 13:47:30,176 - __main__ - INFO - Found 3 companies in tweet test2
+2025-06-28 13:47:30,177 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:47:30,396 - trading_modern - WARNING - Insufficient budget to buy MSFT
+2025-06-28 13:47:30,614 - trading_modern - WARNING - Insufficient budget to buy AMZN
+2025-06-28 13:47:30,615 - trading_modern - INFO - Executed 0/2 strategies successfully
+2025-06-28 13:47:30,615 - __main__ - INFO - Company: Microsoft (MSFT) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:30,615 - __main__ - INFO - Company: Google (GOOGL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:30,616 - __main__ - INFO - Company: Amazon (AMZN) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:47:32,616 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:47:32,616 - __main__ - INFO - Processing tweet test3: The stock market is terrible. Boeing and General Electric are failing....
+2025-06-28 13:47:32,617 - __main__ - INFO - Found 2 companies in tweet test3
+2025-06-28 13:47:32,618 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:47:32,619 - trading_modern - INFO - Simulating short sale of BA (not implemented)
+2025-06-28 13:47:32,619 - trading_modern - INFO - Simulating short sale of GE (not implemented)
+2025-06-28 13:47:32,619 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 13:47:32,619 - __main__ - INFO - Executed trades for 2 companies
+2025-06-28 13:47:32,620 - __main__ - INFO - Company: Boeing (BA) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 13:47:32,620 - __main__ - INFO - Company: General Electric (GE) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 13:47:35,098 - __main__ - INFO - 
+--- Final Status ---
+2025-06-28 13:47:35,098 - __main__ - INFO - {
+  "status": "stopped",
+  "stats": {
+    "tweets_processed": 3,
+    "companies_found": 8,
+    "trades_executed": 5,
+    "start_time": "2025-06-28T13:47:27.349025",
+    "last_tweet_time": "2025-06-28T13:47:32.616885"
+  },
+  "portfolio": {
+    "cash": 1077.04,
+    "total_value": 10000.0,
+    "positions": [
+      {
+        "ticker": "AAPL",
+        "quantity": 22,
+        "avg_price": 201.08,
+        "current_price": 201.08,
+        "value": 4423.76,
+        "gain_loss": 0.0,
+        "gain_loss_pct": 0.0
+      },
+      {
+        "ticker": "AP",
+        "quantity": 1520,
+        "avg_price": 2.96,
+        "current_price": 2.96,
+        "value": 4499.2,
+        "gain_loss": 0.0,
+        "gain_loss_pct": 0.0
+      }
+    ],
+    "total_trades": 2
+  },
+  "market_status": "closed",
+  "target_accounts": [
+    "realDonaldTrump",
+    "TrumpWarRoom",
+    "TeamTrump"
+  ],
+  "uptime": "0:00:07.749062"
+}
+2025-06-28 13:47:35,099 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 13:47:35,100 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 13:50:59,227 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 13:50:59,227 - twitter_modern - WARNING - Twitter client not initialized - missing credentials
+2025-06-28 13:50:59,227 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 13:50:59,247 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 13:50:59,247 - __main__ - INFO - Running in test mode
+2025-06-28 13:50:59,248 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:50:59,248 - __main__ - INFO - Processing tweet test1: Apple is doing great! Their new iPhone is amazing. Tesla on the other hand is having problems....
+2025-06-28 13:50:59,248 - __main__ - INFO - Found 3 companies in tweet test1
+2025-06-28 13:50:59,248 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:50:59,671 - trading_modern - INFO - Bought 22 shares of AAPL at $201.08
+2025-06-28 13:50:59,876 - trading_modern - INFO - Bought 1520 shares of AP at $2.96
+2025-06-28 13:50:59,877 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 13:50:59,878 - __main__ - INFO - Executed trades for 3 companies
+2025-06-28 13:50:59,878 - __main__ - INFO - Company: Apple (AAPL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:50:59,878 - __main__ - INFO - Company: Tesla (TSLA) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:50:59,879 - __main__ - INFO - Company: Ap (AP) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:51:01,879 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:51:01,880 - __main__ - INFO - Processing tweet test2: Microsoft and Google are both excellent companies. Amazon is also doing well....
+2025-06-28 13:51:01,880 - __main__ - INFO - Found 3 companies in tweet test2
+2025-06-28 13:51:01,880 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:51:02,122 - trading_modern - WARNING - Insufficient budget to buy MSFT
+2025-06-28 13:51:02,338 - trading_modern - WARNING - Insufficient budget to buy AMZN
+2025-06-28 13:51:02,339 - trading_modern - INFO - Executed 0/2 strategies successfully
+2025-06-28 13:51:02,340 - __main__ - INFO - Company: Microsoft (MSFT) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:51:02,341 - __main__ - INFO - Company: Google (GOOGL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:51:02,341 - __main__ - INFO - Company: Amazon (AMZN) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 13:51:04,343 - __main__ - INFO - 
+--- Processing Test Tweet ---
+2025-06-28 13:51:04,343 - __main__ - INFO - Processing tweet test3: The stock market is terrible. Boeing and General Electric are failing....
+2025-06-28 13:51:04,344 - __main__ - INFO - Found 2 companies in tweet test3
+2025-06-28 13:51:04,344 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 13:51:04,345 - trading_modern - INFO - Simulating short sale of BA (not implemented)
+2025-06-28 13:51:04,345 - trading_modern - INFO - Simulating short sale of GE (not implemented)
+2025-06-28 13:51:04,345 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 13:51:04,346 - __main__ - INFO - Executed trades for 2 companies
+2025-06-28 13:51:04,346 - __main__ - INFO - Company: Boeing (BA) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 13:51:04,346 - __main__ - INFO - Company: General Electric (GE) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 13:51:06,744 - __main__ - INFO - 
+--- Final Status ---
+2025-06-28 13:51:06,745 - __main__ - INFO - {
+  "status": "stopped",
+  "stats": {
+    "tweets_processed": 3,
+    "companies_found": 8,
+    "trades_executed": 5,
+    "start_time": "2025-06-28T13:50:59.247358",
+    "last_tweet_time": "2025-06-28T13:51:04.343697"
+  },
+  "portfolio": {
+    "cash": 1077.04,
+    "total_value": 10000.0,
+    "positions": [
+      {
+        "ticker": "AAPL",
+        "quantity": 22,
+        "avg_price": 201.08,
+        "current_price": 201.08,
+        "value": 4423.76,
+        "gain_loss": 0.0,
+        "gain_loss_pct": 0.0
+      },
+      {
+        "ticker": "AP",
+        "quantity": 1520,
+        "avg_price": 2.96,
+        "current_price": 2.96,
+        "value": 4499.2,
+        "gain_loss": 0.0,
+        "gain_loss_pct": 0.0
+      }
+    ],
+    "total_trades": 2
+  },
+  "market_status": "closed",
+  "target_accounts": [
+    "realDonaldTrump",
+    "TrumpWarRoom",
+    "TeamTrump"
+  ],
+  "uptime": "0:00:07.497305"
+}
+2025-06-28 13:51:06,745 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 13:51:06,745 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:09:00,670 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 14:09:00,670 - twitter_modern - INFO - Twitter client initialized with Bearer Token
+2025-06-28 14:09:00,670 - twitter_modern - INFO - Twitter client initialized with full credentials
+2025-06-28 14:09:00,672 - analysis_modern - ERROR - Failed to setup Google Cloud client: File path/to/your/credentials.json was not found.
+2025-06-28 14:09:00,694 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 14:09:00,694 - __main__ - INFO - Starting in production mode
+2025-06-28 14:09:00,694 - __main__ - INFO - Starting tweet stream for accounts: ['realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:09:00,861 - twitter_modern - ERROR - Failed to get user ID for realDonaldTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:00,862 - twitter_modern - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:09:00,997 - twitter_modern - ERROR - Failed to get user ID for TrumpWarRoom: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:00,998 - twitter_modern - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:09:01,135 - twitter_modern - ERROR - Failed to get user ID for TeamTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:01,135 - twitter_modern - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:09:01,135 - twitter_modern - ERROR - No valid user IDs found for streaming
+2025-06-28 14:09:01,136 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:09:01,136 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:09:15,572 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 14:09:15,573 - twitter_modern - INFO - Twitter client initialized with Bearer Token
+2025-06-28 14:09:15,573 - twitter_modern - INFO - Twitter client initialized with full credentials
+2025-06-28 14:09:15,573 - analysis_modern - ERROR - Failed to setup Google Cloud client: File path/to/your/credentials.json was not found.
+2025-06-28 14:09:15,599 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 14:09:15,599 - __main__ - INFO - Starting in production mode
+2025-06-28 14:09:15,599 - __main__ - INFO - Starting tweet stream for accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:09:15,767 - twitter_modern - ERROR - Failed to get user ID for elonmusk: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:15,768 - twitter_modern - WARNING - Could not find user ID for elonmusk
+2025-06-28 14:09:15,905 - twitter_modern - ERROR - Failed to get user ID for BillGates: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:15,906 - twitter_modern - WARNING - Could not find user ID for BillGates
+2025-06-28 14:09:16,041 - twitter_modern - ERROR - Failed to get user ID for realDonaldTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:16,042 - twitter_modern - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:09:16,181 - twitter_modern - ERROR - Failed to get user ID for TrumpWarRoom: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:16,182 - twitter_modern - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:09:16,321 - twitter_modern - ERROR - Failed to get user ID for TeamTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:09:16,321 - twitter_modern - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:09:16,322 - twitter_modern - ERROR - No valid user IDs found for streaming
+2025-06-28 14:09:16,322 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:09:16,323 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:15:54,005 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 14:15:54,006 - twitter_modern - INFO - Twitter client initialized with Bearer Token
+2025-06-28 14:15:54,006 - twitter_modern - INFO - Twitter client initialized with full credentials
+2025-06-28 14:15:54,007 - analysis_modern - ERROR - Failed to setup Google Cloud client: File path/to/your/credentials.json was not found.
+2025-06-28 14:15:54,030 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 14:15:54,030 - __main__ - INFO - Starting in production mode
+2025-06-28 14:15:54,031 - __main__ - INFO - Starting tweet stream for accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:15:54,183 - twitter_modern - ERROR - Failed to get user ID for elonmusk: 401 Unauthorized
+Unauthorized
+2025-06-28 14:15:54,184 - twitter_modern - WARNING - Could not find user ID for elonmusk
+2025-06-28 14:15:54,323 - twitter_modern - ERROR - Failed to get user ID for BillGates: 401 Unauthorized
+Unauthorized
+2025-06-28 14:15:54,324 - twitter_modern - WARNING - Could not find user ID for BillGates
+2025-06-28 14:15:54,456 - twitter_modern - ERROR - Failed to get user ID for realDonaldTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:15:54,457 - twitter_modern - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:15:54,586 - twitter_modern - ERROR - Failed to get user ID for TrumpWarRoom: 401 Unauthorized
+Unauthorized
+2025-06-28 14:15:54,586 - twitter_modern - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:15:54,716 - twitter_modern - ERROR - Failed to get user ID for TeamTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:15:54,717 - twitter_modern - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:15:54,717 - twitter_modern - ERROR - No valid user IDs found for streaming
+2025-06-28 14:15:54,718 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:15:54,719 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:20:44,626 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 14:20:44,626 - twitter_modern - INFO - Twitter client initialized with Bearer Token
+2025-06-28 14:20:44,627 - twitter_modern - INFO - Twitter client initialized with full credentials
+2025-06-28 14:20:44,627 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:20:44,648 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 14:20:44,648 - __main__ - INFO - Starting in production mode
+2025-06-28 14:20:44,648 - __main__ - INFO - Starting tweet stream for accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:20:44,807 - twitter_modern - ERROR - Failed to get user ID for elonmusk: 401 Unauthorized
+Unauthorized
+2025-06-28 14:20:44,808 - twitter_modern - WARNING - Could not find user ID for elonmusk
+2025-06-28 14:20:44,944 - twitter_modern - ERROR - Failed to get user ID for BillGates: 401 Unauthorized
+Unauthorized
+2025-06-28 14:20:44,944 - twitter_modern - WARNING - Could not find user ID for BillGates
+2025-06-28 14:20:45,081 - twitter_modern - ERROR - Failed to get user ID for realDonaldTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:20:45,082 - twitter_modern - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:20:45,219 - twitter_modern - ERROR - Failed to get user ID for TrumpWarRoom: 401 Unauthorized
+Unauthorized
+2025-06-28 14:20:45,220 - twitter_modern - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:20:45,358 - twitter_modern - ERROR - Failed to get user ID for TeamTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:20:45,359 - twitter_modern - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:20:45,360 - twitter_modern - ERROR - No valid user IDs found for streaming
+2025-06-28 14:20:45,360 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:20:45,361 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:21:47,788 - __main__ - INFO - Starting Trump2Cash Modern
+2025-06-28 14:21:47,788 - twitter_modern - INFO - Twitter client initialized with Bearer Token
+2025-06-28 14:21:47,788 - twitter_modern - INFO - Twitter client initialized with full credentials
+2025-06-28 14:21:47,789 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:21:47,809 - __main__ - INFO - Trump2Cash Modern initialized
+2025-06-28 14:21:47,810 - __main__ - INFO - Starting in production mode
+2025-06-28 14:21:47,810 - __main__ - INFO - Starting tweet stream for accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:21:47,962 - twitter_modern - ERROR - Failed to get user ID for elonmusk: 401 Unauthorized
+Unauthorized
+2025-06-28 14:21:47,963 - twitter_modern - WARNING - Could not find user ID for elonmusk
+2025-06-28 14:21:48,095 - twitter_modern - ERROR - Failed to get user ID for BillGates: 401 Unauthorized
+Unauthorized
+2025-06-28 14:21:48,095 - twitter_modern - WARNING - Could not find user ID for BillGates
+2025-06-28 14:21:48,225 - twitter_modern - ERROR - Failed to get user ID for realDonaldTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:21:48,226 - twitter_modern - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:21:48,356 - twitter_modern - ERROR - Failed to get user ID for TrumpWarRoom: 401 Unauthorized
+Unauthorized
+2025-06-28 14:21:48,357 - twitter_modern - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:21:48,493 - twitter_modern - ERROR - Failed to get user ID for TeamTrump: 401 Unauthorized
+Unauthorized
+2025-06-28 14:21:48,493 - twitter_modern - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:21:48,494 - twitter_modern - ERROR - No valid user IDs found for streaming
+2025-06-28 14:21:48,495 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:21:48,495 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:24:27,705 - __main__ - INFO - Starting Trump2Cash V2
+2025-06-28 14:24:27,706 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:24:27,706 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:24:27,732 - __main__ - INFO - Trump2Cash V2 initialized
+2025-06-28 14:24:27,732 - __main__ - INFO - Starting in production mode
+2025-06-28 14:24:27,733 - __main__ - INFO - Starting tweet stream for accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:24:27,932 - twitter_modern_v2_only - INFO - Added elonmusk (ID: 44196397) to stream
+2025-06-28 14:24:28,097 - twitter_modern_v2_only - INFO - Added BillGates (ID: 50393960) to stream
+2025-06-28 14:24:28,249 - twitter_modern_v2_only - ERROR - Failed to get user ID for realDonaldTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:24:28,250 - twitter_modern_v2_only - WARNING - Could not find user ID for realDonaldTrump
+2025-06-28 14:24:28,393 - twitter_modern_v2_only - ERROR - Failed to get user ID for TrumpWarRoom: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:24:28,394 - twitter_modern_v2_only - WARNING - Could not find user ID for TrumpWarRoom
+2025-06-28 14:24:28,553 - twitter_modern_v2_only - ERROR - Failed to get user ID for TeamTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:24:28,554 - twitter_modern_v2_only - WARNING - Could not find user ID for TeamTrump
+2025-06-28 14:24:28,556 - tweepy.client - WARNING - Unexpected parameter: follow
+2025-06-28 14:24:28,741 - tweepy.streaming - ERROR - Stream encountered HTTP error: 403
+2025-06-28 14:24:28,742 - tweepy.streaming - ERROR - HTTP error response text: {"client_id":"31144750","detail":"When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.","registration_url":"https://developer.twitter.com/en/docs/projects/overview","title":"Client Forbidden","required_enrollment":"Appropriate Level of API Access","reason":"client-not-enrolled","type":"https://api.twitter.com/2/problems/client-forbidden"}
+2025-06-28 14:24:33,896 - tweepy.streaming - ERROR - Stream encountered HTTP error: 403
+2025-06-28 14:24:33,896 - tweepy.streaming - ERROR - HTTP error response text: {"client_id":"31144750","detail":"When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.","registration_url":"https://developer.twitter.com/en/docs/projects/overview","title":"Client Forbidden","required_enrollment":"Appropriate Level of API Access","reason":"client-not-enrolled","type":"https://api.twitter.com/2/problems/client-forbidden"}
+2025-06-28 14:24:44,056 - tweepy.streaming - ERROR - Stream encountered HTTP error: 403
+2025-06-28 14:24:44,057 - tweepy.streaming - ERROR - HTTP error response text: {"client_id":"31144750","detail":"When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.","registration_url":"https://developer.twitter.com/en/docs/projects/overview","title":"Client Forbidden","required_enrollment":"Appropriate Level of API Access","reason":"client-not-enrolled","type":"https://api.twitter.com/2/problems/client-forbidden"}
+2025-06-28 14:25:04,211 - tweepy.streaming - ERROR - Stream encountered HTTP error: 403
+2025-06-28 14:25:04,212 - tweepy.streaming - ERROR - HTTP error response text: {"client_id":"31144750","detail":"When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.","registration_url":"https://developer.twitter.com/en/docs/projects/overview","title":"Client Forbidden","required_enrollment":"Appropriate Level of API Access","reason":"client-not-enrolled","type":"https://api.twitter.com/2/problems/client-forbidden"}
+2025-06-28 14:25:44,369 - tweepy.streaming - ERROR - Stream encountered HTTP error: 403
+2025-06-28 14:25:44,370 - tweepy.streaming - ERROR - HTTP error response text: {"client_id":"31144750","detail":"When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.","registration_url":"https://developer.twitter.com/en/docs/projects/overview","title":"Client Forbidden","required_enrollment":"Appropriate Level of API Access","reason":"client-not-enrolled","type":"https://api.twitter.com/2/problems/client-forbidden"}
+2025-06-28 14:25:49,041 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:25:49,042 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:25:49,042 - twitter_modern_v2_only - INFO - Streaming stopped
+2025-06-28 14:25:49,042 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:25:49,042 - tweepy.streaming - INFO - Stream disconnected
+2025-06-28 14:25:49,042 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:25:49,042 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:25:52,184 - __main__ - INFO - Starting Trump2Cash Polling Mode
+2025-06-28 14:25:52,185 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:25:52,185 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:25:52,205 - __main__ - INFO - Trump2Cash Polling initialized
+2025-06-28 14:25:52,206 - __main__ - INFO - Starting in polling mode
+2025-06-28 14:25:52,206 - __main__ - INFO - Starting tweet polling every 60 seconds
+2025-06-28 14:25:52,206 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:25:52,206 - __main__ - INFO - Polling tweets from @elonmusk...
+2025-06-28 14:25:52,376 - twitter_modern_v2_only - ERROR - Failed to get user ID for elonmusk: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:25:52,377 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:25:54,378 - __main__ - INFO - Polling tweets from @BillGates...
+2025-06-28 14:25:54,529 - twitter_modern_v2_only - ERROR - Failed to get user ID for BillGates: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:25:54,530 - __main__ - INFO - No new tweets from @BillGates
+2025-06-28 14:25:56,531 - __main__ - INFO - Polling tweets from @realDonaldTrump...
+2025-06-28 14:25:56,673 - twitter_modern_v2_only - ERROR - Failed to get user ID for realDonaldTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:25:56,674 - __main__ - INFO - No new tweets from @realDonaldTrump
+2025-06-28 14:25:58,675 - __main__ - INFO - Polling tweets from @TrumpWarRoom...
+2025-06-28 14:25:58,823 - twitter_modern_v2_only - ERROR - Failed to get user ID for TrumpWarRoom: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:25:58,824 - __main__ - INFO - No new tweets from @TrumpWarRoom
+2025-06-28 14:26:00,825 - __main__ - INFO - Polling tweets from @TeamTrump...
+2025-06-28 14:26:00,967 - twitter_modern_v2_only - ERROR - Failed to get user ID for TeamTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:26:00,968 - __main__ - INFO - No new tweets from @TeamTrump
+2025-06-28 14:26:02,969 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed
+2025-06-28 14:26:02,969 - __main__ - INFO - Waiting 60 seconds before next poll...
+2025-06-28 14:27:02,970 - __main__ - INFO - Polling tweets from @elonmusk...
+2025-06-28 14:27:03,128 - twitter_modern_v2_only - ERROR - Failed to get user ID for elonmusk: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:03,129 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:27:05,130 - __main__ - INFO - Polling tweets from @BillGates...
+2025-06-28 14:27:05,277 - twitter_modern_v2_only - ERROR - Failed to get user ID for BillGates: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:05,277 - __main__ - INFO - No new tweets from @BillGates
+2025-06-28 14:27:07,279 - __main__ - INFO - Polling tweets from @realDonaldTrump...
+2025-06-28 14:27:07,424 - twitter_modern_v2_only - ERROR - Failed to get user ID for realDonaldTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:07,425 - __main__ - INFO - No new tweets from @realDonaldTrump
+2025-06-28 14:27:09,426 - __main__ - INFO - Polling tweets from @TrumpWarRoom...
+2025-06-28 14:27:09,566 - twitter_modern_v2_only - ERROR - Failed to get user ID for TrumpWarRoom: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:09,567 - __main__ - INFO - No new tweets from @TrumpWarRoom
+2025-06-28 14:27:11,567 - __main__ - INFO - Polling tweets from @TeamTrump...
+2025-06-28 14:27:11,714 - twitter_modern_v2_only - ERROR - Failed to get user ID for TeamTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:11,715 - __main__ - INFO - No new tweets from @TeamTrump
+2025-06-28 14:27:13,715 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed
+2025-06-28 14:27:13,716 - __main__ - INFO - Waiting 60 seconds before next poll...
+2025-06-28 14:27:22,335 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:27:22,336 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:27:22,337 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:27:22,338 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:27:22,338 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:27:26,116 - __main__ - INFO - Starting Trump2Cash Rate Limited Mode
+2025-06-28 14:27:26,117 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:27:26,118 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:27:26,138 - __main__ - INFO - Trump2Cash Rate Limited initialized
+2025-06-28 14:27:26,139 - __main__ - INFO - Starting in rate-limited polling mode
+2025-06-28 14:27:26,139 - __main__ - INFO - Starting tweet polling every 300 seconds
+2025-06-28 14:27:26,139 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:27:26,139 - __main__ - INFO - Pre-caching user IDs...
+2025-06-28 14:27:26,139 - __main__ - INFO - Looking up user ID for @elonmusk...
+2025-06-28 14:27:26,309 - twitter_modern_v2_only - ERROR - Failed to get user ID for elonmusk: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:26,309 - __main__ - WARNING - Could not find user ID for @elonmusk
+2025-06-28 14:27:31,309 - __main__ - INFO - Looking up user ID for @BillGates...
+2025-06-28 14:27:31,471 - twitter_modern_v2_only - ERROR - Failed to get user ID for BillGates: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:31,472 - __main__ - WARNING - Could not find user ID for @BillGates
+2025-06-28 14:27:36,472 - __main__ - INFO - Looking up user ID for @realDonaldTrump...
+2025-06-28 14:27:36,622 - twitter_modern_v2_only - ERROR - Failed to get user ID for realDonaldTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:36,623 - __main__ - WARNING - Could not find user ID for @realDonaldTrump
+2025-06-28 14:27:41,623 - __main__ - INFO - Looking up user ID for @TrumpWarRoom...
+2025-06-28 14:27:41,769 - twitter_modern_v2_only - ERROR - Failed to get user ID for TrumpWarRoom: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:41,769 - __main__ - WARNING - Could not find user ID for @TrumpWarRoom
+2025-06-28 14:27:46,770 - __main__ - INFO - Looking up user ID for @TeamTrump...
+2025-06-28 14:27:46,916 - twitter_modern_v2_only - ERROR - Failed to get user ID for TeamTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:46,917 - __main__ - WARNING - Could not find user ID for @TeamTrump
+2025-06-28 14:27:51,918 - __main__ - INFO - Looking up user ID for @elonmusk...
+2025-06-28 14:27:52,063 - twitter_modern_v2_only - ERROR - Failed to get user ID for elonmusk: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:52,063 - __main__ - WARNING - Could not find user ID for @elonmusk
+2025-06-28 14:27:52,063 - __main__ - WARNING - Skipping @elonmusk - no user ID available
+2025-06-28 14:27:52,063 - __main__ - INFO - Looking up user ID for @BillGates...
+2025-06-28 14:27:52,208 - twitter_modern_v2_only - ERROR - Failed to get user ID for BillGates: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:52,209 - __main__ - WARNING - Could not find user ID for @BillGates
+2025-06-28 14:27:52,210 - __main__ - WARNING - Skipping @BillGates - no user ID available
+2025-06-28 14:27:52,210 - __main__ - INFO - Looking up user ID for @realDonaldTrump...
+2025-06-28 14:27:52,353 - twitter_modern_v2_only - ERROR - Failed to get user ID for realDonaldTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:52,353 - __main__ - WARNING - Could not find user ID for @realDonaldTrump
+2025-06-28 14:27:52,353 - __main__ - WARNING - Skipping @realDonaldTrump - no user ID available
+2025-06-28 14:27:52,353 - __main__ - INFO - Looking up user ID for @TrumpWarRoom...
+2025-06-28 14:27:52,496 - twitter_modern_v2_only - ERROR - Failed to get user ID for TrumpWarRoom: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:52,496 - __main__ - WARNING - Could not find user ID for @TrumpWarRoom
+2025-06-28 14:27:52,496 - __main__ - WARNING - Skipping @TrumpWarRoom - no user ID available
+2025-06-28 14:27:52,496 - __main__ - INFO - Looking up user ID for @TeamTrump...
+2025-06-28 14:27:52,641 - twitter_modern_v2_only - ERROR - Failed to get user ID for TeamTrump: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:27:52,642 - __main__ - WARNING - Could not find user ID for @TeamTrump
+2025-06-28 14:27:52,643 - __main__ - WARNING - Skipping @TeamTrump - no user ID available
+2025-06-28 14:27:52,643 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed
+2025-06-28 14:27:52,644 - __main__ - INFO - Waiting 300 seconds before next poll...
+2025-06-28 14:29:30,991 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:29:30,991 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:29:30,992 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:29:30,993 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:29:30,993 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:29:33,853 - __main__ - INFO - Starting Trump2Cash Conservative Mode
+2025-06-28 14:29:33,854 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:29:33,854 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:29:33,873 - __main__ - INFO - Trump2Cash Conservative initialized
+2025-06-28 14:29:33,873 - __main__ - INFO - Starting in conservative polling mode
+2025-06-28 14:29:33,873 - __main__ - INFO - Starting tweet polling every 600 seconds
+2025-06-28 14:29:33,874 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:29:33,874 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 14:29:34,062 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 400 Bad Request
+The `max_results` query parameter value [1] is not between 5 and 100
+2025-06-28 14:29:34,063 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:29:34,064 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:30:04,065 - __main__ - INFO - Polling tweets from @BillGates (ID: 50393960)...
+2025-06-28 14:30:04,218 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 50393960: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:30:04,218 - __main__ - INFO - No new tweets from @BillGates
+2025-06-28 14:30:04,219 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:30:06,679 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:30:06,680 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:30:06,680 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:30:06,681 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:30:06,681 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:30:11,553 - __main__ - INFO - Starting Trump2Cash Conservative Mode
+2025-06-28 14:30:11,554 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:30:11,554 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:30:11,584 - __main__ - INFO - Trump2Cash Conservative initialized
+2025-06-28 14:30:11,584 - __main__ - INFO - Starting in conservative polling mode
+2025-06-28 14:30:11,585 - __main__ - INFO - Starting tweet polling every 600 seconds
+2025-06-28 14:30:11,585 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:30:11,585 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 14:30:11,750 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:30:11,751 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:30:11,751 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:30:21,216 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:30:21,217 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:30:21,218 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:30:21,218 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:30:21,219 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:30:26,008 - __main__ - INFO - Starting Trump2Cash Conservative Mode
+2025-06-28 14:30:26,008 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:30:26,008 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:30:26,031 - __main__ - INFO - Trump2Cash Conservative initialized
+2025-06-28 14:30:26,031 - __main__ - INFO - Starting in conservative polling mode
+2025-06-28 14:30:26,031 - __main__ - INFO - Starting tweet polling every 600 seconds
+2025-06-28 14:30:26,031 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:30:26,032 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 14:30:26,207 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:30:26,207 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:30:26,208 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:30:56,208 - __main__ - INFO - Polling tweets from @BillGates (ID: 50393960)...
+2025-06-28 14:30:56,356 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 50393960: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:30:56,356 - __main__ - INFO - No new tweets from @BillGates
+2025-06-28 14:30:56,356 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:31:26,356 - __main__ - INFO - Polling tweets from @realDonaldTrump (ID: 25073877)...
+2025-06-28 14:31:26,499 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 25073877: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:31:26,499 - __main__ - INFO - No new tweets from @realDonaldTrump
+2025-06-28 14:31:26,499 - __main__ - INFO - Waiting 30 seconds before next user...
+2025-06-28 14:31:41,578 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:31:41,578 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:31:41,579 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:31:41,579 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:31:41,580 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:31:55,037 - __main__ - INFO - Starting Trump2Cash Ultra Conservative Mode
+2025-06-28 14:31:55,038 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:31:55,038 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:31:55,059 - __main__ - INFO - Trump2Cash Ultra Conservative initialized
+2025-06-28 14:31:55,059 - __main__ - INFO - Starting in ultra conservative polling mode
+2025-06-28 14:31:55,059 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 14:31:55,059 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 14:31:55,060 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 14:31:55,060 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 14:31:55,228 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 14:31:55,228 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 14:31:55,229 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed
+2025-06-28 14:31:55,229 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 14:31:55,230 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 14:33:34,350 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 14:33:34,351 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:33:34,351 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:33:34,352 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:33:34,352 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:33:36,403 - __main__ - INFO - Starting Trump2Cash Test Demo Mode
+2025-06-28 14:33:36,404 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:33:36,404 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:33:36,424 - __main__ - INFO - Trump2Cash Test Demo initialized
+2025-06-28 14:33:36,424 - __main__ - INFO - Running in test mode with realistic sample tweets
+2025-06-28 14:33:36,424 - __main__ - INFO - === DEMONSTRATING TRUMP2CASH FUNCTIONALITY ===
+2025-06-28 14:33:36,424 - __main__ - INFO - This shows how the app would process real tweets and make trading decisions
+2025-06-28 14:33:36,424 - __main__ - INFO - 
+2025-06-28 14:33:36,425 - __main__ - INFO - --- Processing Test Tweet 1/5 ---
+2025-06-28 14:33:36,425 - __main__ - INFO - Processing tweet elon_test_1: Tesla is doing incredibly well! The new Cybertruck production is ramping up nicely. Also, SpaceX jus...
+2025-06-28 14:33:36,425 - __main__ - INFO - Found 1 companies in tweet elon_test_1
+2025-06-28 14:33:36,425 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:33:36,425 - trading_modern - INFO - No actionable trading strategies
+2025-06-28 14:33:36,425 - __main__ - INFO - Tweet posting disabled - limited API access
+2025-06-28 14:33:36,426 - __main__ - INFO - Company: Tesla (TSLA) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:33:39,426 - __main__ - INFO - --- Processing Test Tweet 2/5 ---
+2025-06-28 14:33:39,427 - __main__ - INFO - Processing tweet gates_test_1: Microsoft continues to lead in AI innovation. The partnership with OpenAI is producing amazing resul...
+2025-06-28 14:33:39,429 - __main__ - INFO - Found 4 companies in tweet gates_test_1
+2025-06-28 14:33:39,429 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:33:39,880 - trading_modern - INFO - Bought 14 shares of AAPL at $201.08
+2025-06-28 14:33:40,106 - trading_modern - INFO - Bought 6 shares of MSFT at $495.94
+2025-06-28 14:33:40,340 - trading_modern - INFO - Bought 1013 shares of AP at $2.96
+2025-06-28 14:33:40,341 - trading_modern - INFO - Executed 3/3 strategies successfully
+2025-06-28 14:33:40,342 - __main__ - INFO - Executed trades for 4 companies
+2025-06-28 14:33:40,342 - __main__ - INFO - Tweet posting disabled - limited API access
+2025-06-28 14:33:40,343 - __main__ - INFO - Company: Apple (AAPL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:33:40,343 - __main__ - INFO - Company: Microsoft (MSFT) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:33:40,344 - __main__ - INFO - Company: Google (GOOGL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:33:40,344 - __main__ - INFO - Company: Ap (AP) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:33:43,345 - __main__ - INFO - --- Processing Test Tweet 3/5 ---
+2025-06-28 14:33:43,345 - __main__ - INFO - Processing tweet trump_test_1: The stock market is terrible under this administration. Boeing and General Electric are failing. We ...
+2025-06-28 14:33:43,346 - __main__ - INFO - Found 2 companies in tweet trump_test_1
+2025-06-28 14:33:43,347 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:33:43,348 - trading_modern - INFO - Simulating short sale of BA (not implemented)
+2025-06-28 14:33:43,348 - trading_modern - INFO - Simulating short sale of GE (not implemented)
+2025-06-28 14:33:43,348 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 14:33:43,349 - __main__ - INFO - Executed trades for 2 companies
+2025-06-28 14:33:43,349 - __main__ - INFO - Tweet posting disabled - limited API access
+2025-06-28 14:33:43,350 - __main__ - INFO - Company: Boeing (BA) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 14:33:43,350 - __main__ - INFO - Company: General Electric (GE) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 14:33:46,351 - __main__ - INFO - --- Processing Test Tweet 4/5 ---
+2025-06-28 14:33:46,351 - __main__ - INFO - Processing tweet elon_test_2: Apple's new iPhone is impressive, but Tesla's technology is far superior. Amazon is also doing well ...
+2025-06-28 14:33:46,352 - __main__ - INFO - Found 4 companies in tweet elon_test_2
+2025-06-28 14:33:46,352 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:33:46,353 - trading_modern - INFO - No actionable trading strategies
+2025-06-28 14:33:46,353 - __main__ - INFO - Tweet posting disabled - limited API access
+2025-06-28 14:33:46,353 - __main__ - INFO - Company: Apple (AAPL) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 14:33:46,354 - __main__ - INFO - Company: Amazon (AMZN) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 14:33:46,354 - __main__ - INFO - Company: Tesla (TSLA) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 14:33:46,354 - __main__ - INFO - Company: Ap (AP) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 14:33:49,355 - __main__ - INFO - --- Processing Test Tweet 5/5 ---
+2025-06-28 14:33:49,356 - __main__ - INFO - Processing tweet gates_test_2: The healthcare industry needs innovation. Johnson & Johnson and Pfizer are making progress, but we n...
+2025-06-28 14:33:49,356 - __main__ - INFO - No companies found in tweet gates_test_2
+2025-06-28 14:33:52,357 - __main__ - INFO - 
+2025-06-28 14:33:52,358 - __main__ - INFO - === TEST MODE COMPLETE ===
+2025-06-28 14:33:52,358 - __main__ - INFO - Final Stats: 5 tweets processed, 11 companies found, 6 trades executed
+2025-06-28 14:33:52,359 - __main__ - INFO - 
+2025-06-28 14:33:52,360 - __main__ - INFO - To run with real Twitter API (when rate limits reset):
+2025-06-28 14:33:52,360 - __main__ - INFO - 1. Wait 15-60 minutes for rate limits to reset
+2025-06-28 14:33:52,360 - __main__ - INFO - 2. Run: python main_modern_ultra_conservative.py
+2025-06-28 14:33:52,361 - __main__ - INFO - 3. Or run: python main_modern_conservative.py
+2025-06-28 14:33:52,361 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:33:52,361 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 14:38:22,166 - __main__ - INFO - Starting Trump2Cash With Auto-Posting
+2025-06-28 14:38:22,166 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 14:38:22,166 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 14:38:22,187 - __main__ - INFO - Trump2Cash With Auto-Posting initialized
+2025-06-28 14:38:22,187 - __main__ - INFO - Running in test mode with auto-posting simulation
+2025-06-28 14:38:22,187 - __main__ - INFO - === DEMONSTRATING TRUMP2CASH WITH AUTO-POSTING ===
+2025-06-28 14:38:22,187 - __main__ - INFO - This shows how the app would post analysis tweets to your profile
+2025-06-28 14:38:22,187 - __main__ - INFO - 
+2025-06-28 14:38:22,188 - __main__ - INFO - --- Processing Test Tweet 1/3 ---
+2025-06-28 14:38:22,188 - __main__ - INFO - Processing tweet elon_test_1: Tesla is doing incredibly well! The new Cybertruck production is ramping up nicely. Also, SpaceX jus...
+2025-06-28 14:38:22,188 - __main__ - INFO - Found 1 companies in tweet elon_test_1
+2025-06-28 14:38:22,188 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:38:22,188 - trading_modern - INFO - No actionable trading strategies
+2025-06-28 14:38:22,192 - __main__ - INFO - ==================================================
+2025-06-28 14:38:22,194 - __main__ - INFO - ==================================================
+2025-06-28 14:38:22,203 - __main__ - INFO - Company: Tesla (TSLA) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:38:25,204 - __main__ - INFO - --- Processing Test Tweet 2/3 ---
+2025-06-28 14:38:25,204 - __main__ - INFO - Processing tweet gates_test_1: Microsoft continues to lead in AI innovation. The partnership with OpenAI is producing amazing resul...
+2025-06-28 14:38:25,205 - __main__ - INFO - Found 4 companies in tweet gates_test_1
+2025-06-28 14:38:25,206 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:38:25,690 - trading_modern - INFO - Bought 14 shares of AAPL at $201.08
+2025-06-28 14:38:25,909 - trading_modern - INFO - Bought 6 shares of MSFT at $495.94
+2025-06-28 14:38:26,122 - trading_modern - INFO - Bought 1013 shares of AP at $2.96
+2025-06-28 14:38:26,123 - trading_modern - INFO - Executed 3/3 strategies successfully
+2025-06-28 14:38:26,124 - __main__ - INFO - Executed trades for 4 companies
+2025-06-28 14:38:26,131 - __main__ - INFO - ==================================================
+2025-06-28 14:38:26,139 - __main__ - INFO - ==================================================
+2025-06-28 14:38:26,157 - __main__ - INFO - Company: Apple (AAPL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:38:26,157 - __main__ - INFO - Company: Microsoft (MSFT) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:38:26,157 - __main__ - INFO - Company: Google (GOOGL) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:38:26,158 - __main__ - INFO - Company: Ap (AP) - Sentiment: 1.00 - Confidence: 0.80
+2025-06-28 14:38:29,159 - __main__ - INFO - --- Processing Test Tweet 3/3 ---
+2025-06-28 14:38:29,160 - __main__ - INFO - Processing tweet trump_test_1: The stock market is terrible under this administration. Boeing and General Electric are failing. We ...
+2025-06-28 14:38:29,160 - __main__ - INFO - Found 2 companies in tweet trump_test_1
+2025-06-28 14:38:29,161 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 14:38:29,162 - trading_modern - INFO - Simulating short sale of BA (not implemented)
+2025-06-28 14:38:29,162 - trading_modern - INFO - Simulating short sale of GE (not implemented)
+2025-06-28 14:38:29,163 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 14:38:29,163 - __main__ - INFO - Executed trades for 2 companies
+2025-06-28 14:38:29,169 - __main__ - INFO - ==================================================
+2025-06-28 14:38:29,178 - __main__ - INFO - ==================================================
+2025-06-28 14:38:29,207 - __main__ - INFO - Company: Boeing (BA) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 14:38:29,207 - __main__ - INFO - Company: General Electric (GE) - Sentiment: -1.00 - Confidence: 0.80
+2025-06-28 14:38:32,209 - __main__ - INFO - 
+2025-06-28 14:38:32,211 - __main__ - INFO - === TEST MODE COMPLETE ===
+2025-06-28 14:38:32,215 - __main__ - INFO - Final Stats: 3 tweets processed, 7 companies found, 6 trades executed, 0 tweets posted
+2025-06-28 14:38:32,219 - __main__ - INFO - 
+2025-06-28 14:38:32,220 - __main__ - INFO - To enable real posting:
+2025-06-28 14:38:32,222 - __main__ - INFO - 1. Upgrade your Twitter API access level to include 'Read and Write'
+2025-06-28 14:38:32,223 - __main__ - INFO - 2. Run: python test_v2_posting.py to test posting
+2025-06-28 14:38:32,226 - __main__ - INFO - 3. Then run this app with real data
+2025-06-28 14:38:32,229 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 14:38:32,230 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 15:00:19,225 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 15:00:19,226 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 15:00:19,226 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 15:00:19,226 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 15:00:19,249 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 15:00:19,249 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 15:00:19,250 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 15:00:19,250 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 15:00:19,250 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 15:00:19,250 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 15:00:19,250 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 15:00:19,512 - __main__ - ERROR - Error polling @elonmusk: 'dict' object has no attribute '_json'
+2025-06-28 15:00:19,513 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 15:00:19,513 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 15:00:19,514 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 15:06:29,721 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 15:06:29,721 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 15:06:29,721 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 15:06:29,721 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 15:06:29,761 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 15:06:29,762 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 15:06:29,762 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 15:06:29,762 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 15:06:29,762 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 15:06:29,762 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 15:06:29,763 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 15:06:29,935 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 15:06:29,935 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 15:06:29,935 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 15:06:29,935 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 15:06:29,935 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 20:26:59,033 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 20:26:59,033 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 20:26:59,033 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 20:26:59,034 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 20:26:59,054 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 20:26:59,054 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 20:26:59,054 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 20:26:59,054 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 20:26:59,054 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 20:26:59,054 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 20:26:59,054 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 20:26:59,306 - __main__ - ERROR - Error polling @elonmusk: 'dict' object has no attribute '_json'
+2025-06-28 20:26:59,307 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 20:26:59,307 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 20:26:59,307 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 20:29:24,300 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 20:29:24,300 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 20:29:24,301 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 20:29:24,301 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 20:29:24,325 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 20:29:24,326 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 20:29:24,326 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 20:29:24,326 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 20:29:24,326 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 20:29:24,326 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 20:29:24,326 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 20:29:24,502 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 20:29:24,503 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 20:29:24,503 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 20:29:24,504 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 20:29:24,504 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 20:31:11,207 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 20:31:11,208 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 20:31:11,208 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 20:31:11,208 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 20:31:11,228 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 20:31:11,228 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 20:31:11,228 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 20:31:11,228 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 20:31:11,228 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump']
+2025-06-28 20:31:11,228 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 20:31:11,228 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 20:31:11,394 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 20:31:11,394 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 20:31:11,394 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 20:31:11,395 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 20:31:11,395 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 21:01:11,395 - __main__ - INFO - Polling tweets from @BillGates (ID: 50393960)...
+2025-06-28 21:01:11,630 - __main__ - INFO - Found 5 tweets from @BillGates
+2025-06-28 21:01:11,630 - __main__ - INFO - Processing tweet 1938400507258909125: There’s never been a point in the past 25 years when more lives hung in the balance. https://t.co/q8...
+2025-06-28 21:01:11,631 - __main__ - INFO - No companies found in tweet 1938400507258909125
+2025-06-28 21:01:11,631 - __main__ - INFO - Processing tweet 1938368126372253782: It's not too late to change course. https://t.co/w4vD15se6I...
+2025-06-28 21:01:11,631 - __main__ - INFO - Found 1 companies in tweet 1938368126372253782
+2025-06-28 21:01:11,631 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 21:01:11,631 - trading_modern - INFO - No actionable trading strategies
+2025-06-28 21:01:11,632 - __main__ - INFO - Retweeting original tweet 1938368126372253782...
+2025-06-28 21:01:11,912 - __main__ - WARNING - Retweet failed - no response data
+2025-06-28 21:01:11,912 - __main__ - WARNING - Could not retweet original tweet
+2025-06-28 21:01:11,912 - __main__ - INFO - Generated analysis reply:
+2025-06-28 21:01:11,912 - __main__ - INFO - ==================================================
+2025-06-28 21:01:11,912 - __main__ - INFO - TRUMP2CASH ANALYSIS
+
+NEUTRAL Ge (GE)
+   Sentiment: 0.00
+   Action: HOLD
+
+Time: 2025-06-28 21:01:11
+
+#Trump2Cash #StockAnalysis #TradingBot
+2025-06-28 21:01:11,912 - __main__ - INFO - ==================================================
+2025-06-28 21:01:12,127 - __main__ - ERROR - Failed to post reply: 403 Forbidden
+You are not allowed to reply to this Tweet as the Tweet author has restricted who can reply to this Tweet.
+2025-06-28 21:01:12,127 - __main__ - WARNING - Could not post analysis reply
+2025-06-28 21:01:12,127 - __main__ - INFO - Company: Ge (GE) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 21:01:12,127 - __main__ - INFO - Processing tweet 1938012546365329906: In the last 25 years, @gavi has helped over a billion kids live better, healthier lives. Pulling the...
+2025-06-28 21:01:12,127 - __main__ - INFO - No companies found in tweet 1938012546365329906
+2025-06-28 21:01:12,127 - __main__ - INFO - Processing tweet 1937944878983598517: Health aid works. https://t.co/PBhn72zS3p...
+2025-06-28 21:01:12,128 - __main__ - INFO - No companies found in tweet 1937944878983598517
+2025-06-28 21:01:12,128 - __main__ - INFO - Processing tweet 1937902974996738233: When the United States and other governments suddenly cut their aid budgets, I know for a fact that ...
+2025-06-28 21:01:12,128 - __main__ - INFO - Found 1 companies in tweet 1937902974996738233
+2025-06-28 21:01:12,128 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 21:01:12,128 - trading_modern - INFO - No actionable trading strategies
+2025-06-28 21:01:12,128 - __main__ - INFO - Retweeting original tweet 1937902974996738233...
+2025-06-28 21:01:12,276 - __main__ - ERROR - Failed to retweet: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:01:12,276 - __main__ - WARNING - Could not retweet original tweet
+2025-06-28 21:01:12,276 - __main__ - INFO - Generated analysis reply:
+2025-06-28 21:01:12,276 - __main__ - INFO - ==================================================
+2025-06-28 21:01:12,277 - __main__ - INFO - TRUMP2CASH ANALYSIS
+
+NEUTRAL Ge (GE)
+   Sentiment: 0.00
+   Action: HOLD
+
+Time: 2025-06-28 21:01:12
+
+#Trump2Cash #StockAnalysis #TradingBot
+2025-06-28 21:01:12,277 - __main__ - INFO - ==================================================
+2025-06-28 21:01:12,489 - __main__ - ERROR - Failed to post reply: 403 Forbidden
+You are not allowed to reply to this Tweet as the Tweet author has restricted who can reply to this Tweet.
+2025-06-28 21:01:12,490 - __main__ - WARNING - Could not post analysis reply
+2025-06-28 21:01:12,491 - __main__ - INFO - Company: Ge (GE) - Sentiment: 0.00 - Confidence: 0.80
+2025-06-28 21:01:12,491 - __main__ - INFO - Polling cycle complete. Stats: 5 tweets processed, 2 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 21:01:12,491 - __main__ - INFO - Next user will be: realDonaldTrump
+2025-06-28 21:01:12,491 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 21:06:55,163 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 21:06:55,164 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:06:55,164 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 21:06:55,165 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:06:55,166 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 21:06:57,619 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 21:06:57,619 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 21:06:57,620 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:06:57,620 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:06:57,645 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:06:57,645 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 21:06:57,645 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 21:06:57,645 - __main__ - INFO - Starting tweet polling every 1800 seconds
+2025-06-28 21:06:57,645 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'TeamTrump', 'financialjuice']
+2025-06-28 21:06:57,645 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 21:06:57,645 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 21:06:57,819 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:06:57,819 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 21:06:57,820 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 21:06:57,821 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 21:06:57,821 - __main__ - INFO - Waiting 1800 seconds before next poll...
+2025-06-28 21:10:57,772 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 21:10:57,772 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:10:57,773 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 21:10:57,773 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:10:57,773 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 21:11:03,498 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 21:11:03,499 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 21:11:03,499 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:11:03,499 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:11:03,519 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:11:03,519 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 21:11:03,519 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 21:11:03,519 - __main__ - INFO - Starting tweet polling every 600 seconds
+2025-06-28 21:11:03,519 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'BillGates', 'realDonaldTrump', 'TrumpWarRoom', 'financialjuice']
+2025-06-28 21:11:03,519 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 21:11:03,519 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 21:11:03,690 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:11:03,691 - __main__ - INFO - No new tweets from @elonmusk
+2025-06-28 21:11:03,691 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 21:11:03,692 - __main__ - INFO - Next user will be: BillGates
+2025-06-28 21:11:03,692 - __main__ - INFO - Waiting 600 seconds before next poll...
+2025-06-28 21:14:04,117 - __main__ - INFO - Starting Trump2Cash With Retweet
+2025-06-28 21:14:04,117 - __main__ - INFO - This will retweet original tweets and reply with analysis
+2025-06-28 21:14:04,117 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:14:04,117 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:14:04,138 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:14:04,138 - __main__ - INFO - Loaded 0 previously processed tweets
+2025-06-28 21:14:04,138 - __main__ - INFO - Trump2Cash With Retweet initialized
+2025-06-28 21:14:04,139 - __main__ - INFO - Starting in production mode with retweet functionality
+2025-06-28 21:14:04,139 - __main__ - INFO - Starting tweet polling every 600 seconds
+2025-06-28 21:14:04,139 - __main__ - INFO - Monitoring accounts: ['elonmusk', 'realDonaldTrump', 'TrumpWarRoom', 'financialjuice']
+2025-06-28 21:14:04,139 - __main__ - INFO - Ultra conservative mode: one user per cycle
+2025-06-28 21:14:04,139 - __main__ - INFO - Polling tweets from @elonmusk (ID: 44196397)...
+2025-06-28 21:14:04,319 - twitter_modern_v2_only - ERROR - Failed to get tweets for user ID 44196397: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:14:04,320 - __main__ - INFO - No tweets found from @elonmusk
+2025-06-28 21:14:04,320 - __main__ - INFO - Polling cycle complete. Stats: 0 tweets processed, 0 companies found, 0 trades executed, 0 retweets posted, 0 analysis replies posted
+2025-06-28 21:14:04,320 - __main__ - INFO - Next user will be: realDonaldTrump
+2025-06-28 21:14:04,321 - __main__ - INFO - Waiting 600 seconds before next poll...
+2025-06-28 21:15:45,425 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 21:15:45,426 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:15:45,426 - __main__ - INFO - Trump2Cash stopped
+2025-06-28 21:15:45,427 - __main__ - INFO - Stopping Trump2Cash...
+2025-06-28 21:15:45,427 - __main__ - INFO - Trump2Cash stopped

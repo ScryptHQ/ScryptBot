@@ -1,0 +1,95 @@
+2025-06-28 21:17:14,344 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:17:14,344 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:17:14,367 - main_financial_juice_focused - INFO - Twitter posting client initialized successfully
+2025-06-28 21:17:14,367 - main_financial_juice_focused - INFO - Loaded 0 previously processed tweets
+2025-06-28 21:17:14,367 - main_financial_juice_focused - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:17:14,616 - main_financial_juice_focused - WARNING - Retweet failed - no response data
+2025-06-28 21:17:14,911 - trading_modern - INFO - Market is closed - simulating trades for next open
+2025-06-28 21:17:15,331 - trading_modern - INFO - Bought 22 shares of AAPL at $201.08
+2025-06-28 21:17:15,555 - trading_modern - INFO - Bought 1520 shares of AP at $2.96
+2025-06-28 21:17:15,555 - trading_modern - INFO - Executed 2/2 strategies successfully
+2025-06-28 21:18:13,121 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:18:13,121 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:18:13,150 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:18:13,150 - __main__ - INFO - Loaded 1 previously processed tweets
+2025-06-28 21:18:13,150 - __main__ - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:18:13,359 - __main__ - INFO -    Tweets Processed: 0
+2025-06-28 21:18:13,359 - __main__ - INFO -    Financial Juice Tweets: 0
+2025-06-28 21:18:13,359 - __main__ - INFO -    Companies Found: 0
+2025-06-28 21:18:13,359 - __main__ - INFO -    Trades Executed: 0
+2025-06-28 21:18:13,360 - __main__ - INFO -    Tweets Posted: 0
+2025-06-28 21:18:13,360 - __main__ - INFO -    Retweets Posted: 0
+2025-06-28 21:18:30,793 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:18:30,793 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:18:30,813 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:18:30,813 - __main__ - INFO - Loaded 1 previously processed tweets
+2025-06-28 21:18:30,813 - __main__ - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:18:31,005 - __main__ - INFO -    Tweets Processed: 0
+2025-06-28 21:18:31,005 - __main__ - INFO -    Financial Juice Tweets: 0
+2025-06-28 21:18:31,005 - __main__ - INFO -    Companies Found: 0
+2025-06-28 21:18:31,005 - __main__ - INFO -    Trades Executed: 0
+2025-06-28 21:18:31,005 - __main__ - INFO -    Tweets Posted: 0
+2025-06-28 21:18:31,005 - __main__ - INFO -    Retweets Posted: 0
+2025-06-28 21:20:11,123 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:20:11,124 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:20:11,145 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:20:11,146 - __main__ - INFO - Loaded 1 previously processed tweets
+2025-06-28 21:20:11,146 - __main__ - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:20:11,146 - __main__ - INFO - Starting Financial Juice Monitor (interval: 300s)
+2025-06-28 21:20:11,146 - __main__ - INFO - Focus: @financialjuice (5-20 posts/day)
+2025-06-28 21:20:11,146 - __main__ - INFO - Checking for new Financial Juice tweets...
+2025-06-28 21:20:11,330 - __main__ - INFO - No new tweets found
+2025-06-28 21:20:11,331 - __main__ - INFO - Current Stats:
+2025-06-28 21:20:11,331 - __main__ - INFO -    Tweets Processed: 0
+2025-06-28 21:20:11,331 - __main__ - INFO -    Financial Juice Tweets: 0
+2025-06-28 21:20:11,331 - __main__ - INFO -    Companies Found: 0
+2025-06-28 21:20:11,331 - __main__ - INFO -    Trades Executed: 0
+2025-06-28 21:20:11,331 - __main__ - INFO -    Tweets Posted: 0
+2025-06-28 21:20:11,331 - __main__ - INFO -    Retweets Posted: 0
+2025-06-28 21:20:11,332 - __main__ - INFO - Waiting 300 seconds before next check...
+2025-06-28 21:27:49,167 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:27:49,167 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:27:49,188 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:27:49,189 - __main__ - INFO - Loaded 1 previously processed tweets
+2025-06-28 21:27:49,189 - __main__ - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:27:49,189 - __main__ - INFO - Starting Financial Juice Monitor (interval: 300s)
+2025-06-28 21:27:49,189 - __main__ - INFO - Focus: @financialjuice (5-20 posts/day)
+2025-06-28 21:27:49,189 - __main__ - INFO - Checking for new Financial Juice tweets...
+2025-06-28 21:27:49,358 - twitter_modern_v2_only - ERROR - Failed to get user ID for 381696140: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:27:49,359 - __main__ - INFO - DEBUG: Raw tweets fetched: []
+2025-06-28 21:27:49,359 - __main__ - INFO - No new tweets found
+2025-06-28 21:27:49,359 - __main__ - INFO - Current Stats:
+2025-06-28 21:27:49,360 - __main__ - INFO -    Tweets Processed: 0
+2025-06-28 21:27:49,360 - __main__ - INFO -    Financial Juice Tweets: 0
+2025-06-28 21:27:49,360 - __main__ - INFO -    Companies Found: 0
+2025-06-28 21:27:49,360 - __main__ - INFO -    Trades Executed: 0
+2025-06-28 21:27:49,360 - __main__ - INFO -    Tweets Posted: 0
+2025-06-28 21:27:49,360 - __main__ - INFO -    Retweets Posted: 0
+2025-06-28 21:27:49,361 - __main__ - INFO - Waiting 300 seconds before next check...
+2025-06-28 21:27:57,404 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 21:27:57,408 - __main__ - INFO - Financial Juice Monitor stopped
+2025-06-28 21:27:57,409 - __main__ - INFO - Financial Juice Monitor stopped
+2025-06-28 21:28:20,671 - twitter_modern_v2_only - INFO - Twitter client initialized with Bearer Token (v2 only)
+2025-06-28 21:28:20,671 - analysis_modern - WARNING - Google Cloud credentials not found - using fallback analysis
+2025-06-28 21:28:20,690 - __main__ - INFO - Twitter posting client initialized successfully
+2025-06-28 21:28:20,690 - __main__ - INFO - Loaded 1 previously processed tweets
+2025-06-28 21:28:20,690 - __main__ - INFO - Financial Juice Monitor initialized - focusing on @financialjuice
+2025-06-28 21:28:20,691 - __main__ - INFO - Starting Financial Juice Monitor (interval: 300s)
+2025-06-28 21:28:20,691 - __main__ - INFO - Focus: @financialjuice (5-20 posts/day)
+2025-06-28 21:28:20,691 - __main__ - INFO - Checking for new Financial Juice tweets...
+2025-06-28 21:28:20,870 - twitter_modern_v2_only - ERROR - Failed to get user ID for 381696140: 429 Too Many Requests
+Too Many Requests
+2025-06-28 21:28:20,870 - __main__ - INFO - DEBUG: Raw tweets fetched: []
+2025-06-28 21:28:20,871 - __main__ - INFO - No new tweets found
+2025-06-28 21:28:20,871 - __main__ - INFO - Current Stats:
+2025-06-28 21:28:20,871 - __main__ - INFO -    Tweets Processed: 0
+2025-06-28 21:28:20,871 - __main__ - INFO -    Financial Juice Tweets: 0
+2025-06-28 21:28:20,871 - __main__ - INFO -    Companies Found: 0
+2025-06-28 21:28:20,871 - __main__ - INFO -    Trades Executed: 0
+2025-06-28 21:28:20,871 - __main__ - INFO -    Tweets Posted: 0
+2025-06-28 21:28:20,871 - __main__ - INFO -    Retweets Posted: 0
+2025-06-28 21:28:20,872 - __main__ - INFO - Waiting 300 seconds before next check...
+2025-06-28 21:30:32,806 - __main__ - INFO - Received signal 2, shutting down gracefully...
+2025-06-28 21:30:32,807 - __main__ - INFO - Financial Juice Monitor stopped
+2025-06-28 21:30:32,808 - __main__ - INFO - Financial Juice Monitor stopped

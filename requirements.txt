@@ -1,0 +1,9 @@
+# ScryptBot Requirements
+feedparser
+python-dotenv
+tweepy
+openai
+yfinance
+pandas
+playwright
+Pillow
